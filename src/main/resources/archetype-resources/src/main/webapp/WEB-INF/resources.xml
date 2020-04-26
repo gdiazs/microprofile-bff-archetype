@@ -1,0 +1,12 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<?xml version="1.0" encoding="UTF-8"?>
+<tomee>
+	<Resource id="${artifactId}Ds" type="DataSource">
+		JdbcDriver org.postgresql.Driver
+		JdbcUrl jdbc:postgresql://localhost/test
+		UserName postgres
+		Password pass
+	</Resource>
+</tomee>
