@@ -4,11 +4,21 @@
 <!DOCTYPE html>
 <html xmlns:ui="http://java.sun.com/jsf/facelets"
   xmlns:h="http://java.sun.com/jsf/html">
-<head>
-<meta charset="UTF-8"/>
-<title>Insert title here</title>
-</head>
+<h:head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="preload" href="${symbol_pound}{request.contextPath}/home/${symbol_pound}{home.appName}/css/app.css"/>
+  <link rel="preload" href="${symbol_pound}{request.contextPath}/home/${symbol_pound}{home.appName}/js/app.js"/>
+  <link rel="stylesheet" href="${symbol_pound}{request.contextPath}/home/${symbol_pound}{home.appName}/css/app.css" />
+</h:head>
 <body>
-	<h:outputText value="${symbol_pound}{apps.appName}"/>
+  <noscript>
+    <strong>We're sorry ${symbol_pound}{home.appName} doesn't work properly
+      without JavaScript enabled. Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <h:outputText value="${symbol_pound}{home.appName}" />
+  <script src="${symbol_pound}{request.contextPath}/home/${symbol_pound}{home.appName}/js/app.js"></script>
 </body>
 </html>

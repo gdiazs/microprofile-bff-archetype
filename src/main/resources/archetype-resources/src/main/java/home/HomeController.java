@@ -1,18 +1,18 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package ${package}.${artifactId}.apps;
+package ${package}.home;
 
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Named;
 
-@Named(value = "apps")
+@Named(value = "home")
 @RequestScoped
-public class AppsController {
+public class HomeController {
 
   private String appName;
 
-  public AppsController() {
+  public HomeController() {
     this.appName = "vue-${artifactId}";
   }
 
